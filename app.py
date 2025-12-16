@@ -65,8 +65,8 @@ df_charts = df_filtered[df_filtered['Category'] == selected_category]
 
 
 # Title and Intro
-st.title("Philippine Vaccination Coverage Dashboard")
-st.markdown("Analysis of immunization coverage for children aged 12-23 months.")
+st.title("Philippine Vaccination Coverage 2022 Dashboard")
+st.markdown("Analysis of immunization coverage for children aged 12-23 months. (2022)")
 
 # --- SECTION 1: KEY METRICS (KPIs) ---
 st.markdown("### 📊 Key Demographics")
@@ -171,4 +171,5 @@ with f2:
         **Data Source:** [OpenStat PSA - Vaccination by Sex, Region, Year and Type of Vaccination of Children Age 12-23 months](https://openstat.psa.gov.ph/)  
         *Dashboard created for Health Informatics (ITE3) Finals.*
         """
+
     )
