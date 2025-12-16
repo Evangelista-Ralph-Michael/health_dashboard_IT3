@@ -1,0 +1,415 @@
+Region,Year,Vaccine,Coverage_Rate,Category
+Philippines,2022,BCG,87.8,Basic Antigen
+Philippines,2022,DPT 1,86.7,Basic Antigen
+Philippines,2022,DPT 2,83.1,Basic Antigen
+Philippines,2022,DPT 3,78.9,Basic Antigen
+Philippines,2022,Fully Vaccinated (basic antigens),71.8,Summary Indicator
+Philippines,2022,Fully Vaccinated according to national schedule,59.4,Summary Indicator
+Philippines,2022,HepB (birth dose),82.2,Basic Antigen
+Philippines,2022,HepB 1,85.7,Basic Antigen
+Philippines,2022,HepB 2,81.4,Basic Antigen
+Philippines,2022,HepB 3,77.3,Basic Antigen
+Philippines,2022,Hib 1,86.7,Basic Antigen
+Philippines,2022,Hib 2,83.1,Basic Antigen
+Philippines,2022,Hib 3,78.9,Basic Antigen
+Philippines,2022,Measles/MMR 1,79.2,Basic Antigen
+Philippines,2022,No vaccinations,11.2,Summary Indicator
+Philippines,2022,Number of Children Age 12-23 months (in thousands),1442.0,Demographic
+Philippines,2022,PCV 1,81.8,Basic Antigen
+Philippines,2022,PCV 2,78.0,Basic Antigen
+Philippines,2022,PCV 3,71.5,Basic Antigen
+Philippines,2022,Polio 1,86.3,Basic Antigen
+Philippines,2022,Polio 2,82.4,Basic Antigen
+Philippines,2022,Polio 3,77.8,Basic Antigen
+Philippines,2022,Polio-IPV,79.1,Basic Antigen
+ARMM,2022,BCG,38.2,Basic Antigen
+ARMM,2022,DPT 1,32.8,Basic Antigen
+ARMM,2022,DPT 2,25.5,Basic Antigen
+ARMM,2022,DPT 3,20.2,Basic Antigen
+ARMM,2022,Fully Vaccinated (basic antigens),18.1,Summary Indicator
+ARMM,2022,Fully Vaccinated according to national schedule,14.9,Summary Indicator
+ARMM,2022,HepB (birth dose),31.8,Basic Antigen
+ARMM,2022,HepB 1,34.2,Basic Antigen
+ARMM,2022,HepB 2,25.0,Basic Antigen
+ARMM,2022,HepB 3,19.4,Basic Antigen
+ARMM,2022,Hib 1,32.8,Basic Antigen
+ARMM,2022,Hib 2,25.5,Basic Antigen
+ARMM,2022,Hib 3,20.2,Basic Antigen
+ARMM,2022,Measles/MMR 1,21.9,Basic Antigen
+ARMM,2022,No vaccinations,59.9,Summary Indicator
+ARMM,2022,Number of Children Age 12-23 months (in thousands),98.0,Demographic
+ARMM,2022,PCV 1,27.9,Basic Antigen
+ARMM,2022,PCV 2,24.4,Basic Antigen
+ARMM,2022,PCV 3,20.8,Basic Antigen
+ARMM,2022,Polio 1,33.2,Basic Antigen
+ARMM,2022,Polio 2,29.0,Basic Antigen
+ARMM,2022,Polio 3,23.2,Basic Antigen
+ARMM,2022,Polio-IPV,24.8,Basic Antigen
+IVA - CALABARZON,2022,BCG,94.1,Basic Antigen
+IVA - CALABARZON,2022,DPT 1,94.1,Basic Antigen
+IVA - CALABARZON,2022,DPT 2,94.1,Basic Antigen
+IVA - CALABARZON,2022,DPT 3,91.4,Basic Antigen
+IVA - CALABARZON,2022,Fully Vaccinated (basic antigens),87.4,Summary Indicator
+IVA - CALABARZON,2022,Fully Vaccinated according to national schedule,82.3,Summary Indicator
+IVA - CALABARZON,2022,HepB (birth dose),93.3,Basic Antigen
+IVA - CALABARZON,2022,HepB 1,92.3,Basic Antigen
+IVA - CALABARZON,2022,HepB 2,92.3,Basic Antigen
+IVA - CALABARZON,2022,HepB 3,89.6,Basic Antigen
+IVA - CALABARZON,2022,Hib 1,94.1,Basic Antigen
+IVA - CALABARZON,2022,Hib 2,94.1,Basic Antigen
+IVA - CALABARZON,2022,Hib 3,91.4,Basic Antigen
+IVA - CALABARZON,2022,Measles/MMR 1,90.0,Basic Antigen
+IVA - CALABARZON,2022,No vaccinations,5.9,Summary Indicator
+IVA - CALABARZON,2022,Number of Children Age 12-23 months (in thousands),173.0,Demographic
+IVA - CALABARZON,2022,PCV 1,94.1,Basic Antigen
+IVA - CALABARZON,2022,PCV 2,94.1,Basic Antigen
+IVA - CALABARZON,2022,PCV 3,89.0,Basic Antigen
+IVA - CALABARZON,2022,Polio 1,94.1,Basic Antigen
+IVA - CALABARZON,2022,Polio 2,94.1,Basic Antigen
+IVA - CALABARZON,2022,Polio 3,91.4,Basic Antigen
+IVA - CALABARZON,2022,Polio-IPV,91.6,Basic Antigen
+IX - Zamboanga Peninsula,2022,BCG,84.5,Basic Antigen
+IX - Zamboanga Peninsula,2022,DPT 1,80.8,Basic Antigen
+IX - Zamboanga Peninsula,2022,DPT 2,76.8,Basic Antigen
+IX - Zamboanga Peninsula,2022,DPT 3,74.3,Basic Antigen
+IX - Zamboanga Peninsula,2022,Fully Vaccinated (basic antigens),65.8,Summary Indicator
+IX - Zamboanga Peninsula,2022,Fully Vaccinated according to national schedule,60.1,Summary Indicator
+IX - Zamboanga Peninsula,2022,HepB (birth dose),80.4,Basic Antigen
+IX - Zamboanga Peninsula,2022,HepB 1,80.8,Basic Antigen
+IX - Zamboanga Peninsula,2022,HepB 2,79.6,Basic Antigen
+IX - Zamboanga Peninsula,2022,HepB 3,75.0,Basic Antigen
+IX - Zamboanga Peninsula,2022,Hib 1,80.8,Basic Antigen
+IX - Zamboanga Peninsula,2022,Hib 2,76.8,Basic Antigen
+IX - Zamboanga Peninsula,2022,Hib 3,74.3,Basic Antigen
+IX - Zamboanga Peninsula,2022,Measles/MMR 1,72.5,Basic Antigen
+IX - Zamboanga Peninsula,2022,No vaccinations,11.8,Summary Indicator
+IX - Zamboanga Peninsula,2022,Number of Children Age 12-23 months (in thousands),69.0,Demographic
+IX - Zamboanga Peninsula,2022,PCV 1,77.4,Basic Antigen
+IX - Zamboanga Peninsula,2022,PCV 2,73.6,Basic Antigen
+IX - Zamboanga Peninsula,2022,PCV 3,71.9,Basic Antigen
+IX - Zamboanga Peninsula,2022,Polio 1,83.3,Basic Antigen
+IX - Zamboanga Peninsula,2022,Polio 2,79.9,Basic Antigen
+IX - Zamboanga Peninsula,2022,Polio 3,77.5,Basic Antigen
+IX - Zamboanga Peninsula,2022,Polio-IPV,79.1,Basic Antigen
+MIMAROPA Region,2022,BCG,88.5,Basic Antigen
+MIMAROPA Region,2022,DPT 1,89.4,Basic Antigen
+MIMAROPA Region,2022,DPT 2,86.4,Basic Antigen
+MIMAROPA Region,2022,DPT 3,82.3,Basic Antigen
+MIMAROPA Region,2022,Fully Vaccinated (basic antigens),74.3,Summary Indicator
+MIMAROPA Region,2022,Fully Vaccinated according to national schedule,43.2,Summary Indicator
+MIMAROPA Region,2022,HepB (birth dose),72.8,Basic Antigen
+MIMAROPA Region,2022,HepB 1,89.4,Basic Antigen
+MIMAROPA Region,2022,HepB 2,86.4,Basic Antigen
+MIMAROPA Region,2022,HepB 3,82.3,Basic Antigen
+MIMAROPA Region,2022,Hib 1,89.4,Basic Antigen
+MIMAROPA Region,2022,Hib 2,86.4,Basic Antigen
+MIMAROPA Region,2022,Hib 3,82.3,Basic Antigen
+MIMAROPA Region,2022,Measles/MMR 1,81.4,Basic Antigen
+MIMAROPA Region,2022,No vaccinations,8.3,Summary Indicator
+MIMAROPA Region,2022,Number of Children Age 12-23 months (in thousands),41.0,Demographic
+MIMAROPA Region,2022,PCV 1,77.1,Basic Antigen
+MIMAROPA Region,2022,PCV 2,72.4,Basic Antigen
+MIMAROPA Region,2022,PCV 3,60.2,Basic Antigen
+MIMAROPA Region,2022,Polio 1,90.9,Basic Antigen
+MIMAROPA Region,2022,Polio 2,88.7,Basic Antigen
+MIMAROPA Region,2022,Polio 3,77.2,Basic Antigen
+MIMAROPA Region,2022,Polio-IPV,77.1,Basic Antigen
+V - Bicol,2022,BCG,94.7,Basic Antigen
+V - Bicol,2022,DPT 1,94.0,Basic Antigen
+V - Bicol,2022,DPT 2,91.0,Basic Antigen
+V - Bicol,2022,DPT 3,88.0,Basic Antigen
+V - Bicol,2022,Fully Vaccinated (basic antigens),80.6,Summary Indicator
+V - Bicol,2022,Fully Vaccinated according to national schedule,71.7,Summary Indicator
+V - Bicol,2022,HepB (birth dose),94.0,Basic Antigen
+V - Bicol,2022,HepB 1,93.2,Basic Antigen
+V - Bicol,2022,HepB 2,90.2,Basic Antigen
+V - Bicol,2022,HepB 3,87.3,Basic Antigen
+V - Bicol,2022,Hib 1,94.0,Basic Antigen
+V - Bicol,2022,Hib 2,91.0,Basic Antigen
+V - Bicol,2022,Hib 3,88.0,Basic Antigen
+V - Bicol,2022,Measles/MMR 1,90.5,Basic Antigen
+V - Bicol,2022,No vaccinations,5.1,Summary Indicator
+V - Bicol,2022,Number of Children Age 12-23 months (in thousands),71.0,Demographic
+V - Bicol,2022,PCV 1,94.0,Basic Antigen
+V - Bicol,2022,PCV 2,94.0,Basic Antigen
+V - Bicol,2022,PCV 3,86.1,Basic Antigen
+V - Bicol,2022,Polio 1,94.0,Basic Antigen
+V - Bicol,2022,Polio 2,90.0,Basic Antigen
+V - Bicol,2022,Polio 3,89.2,Basic Antigen
+V - Bicol,2022,Polio-IPV,86.3,Basic Antigen
+VI - Western Visayas,2022,BCG,89.5,Basic Antigen
+VI - Western Visayas,2022,DPT 1,88.9,Basic Antigen
+VI - Western Visayas,2022,DPT 2,86.1,Basic Antigen
+VI - Western Visayas,2022,DPT 3,81.9,Basic Antigen
+VI - Western Visayas,2022,Fully Vaccinated (basic antigens),77.7,Summary Indicator
+VI - Western Visayas,2022,Fully Vaccinated according to national schedule,62.8,Summary Indicator
+VI - Western Visayas,2022,HepB (birth dose),82.7,Basic Antigen
+VI - Western Visayas,2022,HepB 1,89.1,Basic Antigen
+VI - Western Visayas,2022,HepB 2,88.9,Basic Antigen
+VI - Western Visayas,2022,HepB 3,84.7,Basic Antigen
+VI - Western Visayas,2022,Hib 1,88.9,Basic Antigen
+VI - Western Visayas,2022,Hib 2,86.1,Basic Antigen
+VI - Western Visayas,2022,Hib 3,81.9,Basic Antigen
+VI - Western Visayas,2022,Measles/MMR 1,85.2,Basic Antigen
+VI - Western Visayas,2022,No vaccinations,10.5,Summary Indicator
+VI - Western Visayas,2022,Number of Children Age 12-23 months (in thousands),118.0,Demographic
+VI - Western Visayas,2022,PCV 1,85.3,Basic Antigen
+VI - Western Visayas,2022,PCV 2,82.1,Basic Antigen
+VI - Western Visayas,2022,PCV 3,77.2,Basic Antigen
+VI - Western Visayas,2022,Polio 1,89.5,Basic Antigen
+VI - Western Visayas,2022,Polio 2,89.2,Basic Antigen
+VI - Western Visayas,2022,Polio 3,83.5,Basic Antigen
+VI - Western Visayas,2022,Polio-IPV,79.3,Basic Antigen
+VII - Central Visayas,2022,BCG,90.1,Basic Antigen
+VII - Central Visayas,2022,DPT 1,90.8,Basic Antigen
+VII - Central Visayas,2022,DPT 2,86.3,Basic Antigen
+VII - Central Visayas,2022,DPT 3,85.2,Basic Antigen
+VII - Central Visayas,2022,Fully Vaccinated (basic antigens),77.6,Summary Indicator
+VII - Central Visayas,2022,Fully Vaccinated according to national schedule,53.2,Summary Indicator
+VII - Central Visayas,2022,HepB (birth dose),75.7,Basic Antigen
+VII - Central Visayas,2022,HepB 1,86.0,Basic Antigen
+VII - Central Visayas,2022,HepB 2,76.3,Basic Antigen
+VII - Central Visayas,2022,HepB 3,75.2,Basic Antigen
+VII - Central Visayas,2022,Hib 1,90.8,Basic Antigen
+VII - Central Visayas,2022,Hib 2,86.3,Basic Antigen
+VII - Central Visayas,2022,Hib 3,85.2,Basic Antigen
+VII - Central Visayas,2022,Measles/MMR 1,88.3,Basic Antigen
+VII - Central Visayas,2022,No vaccinations,8.0,Summary Indicator
+VII - Central Visayas,2022,Number of Children Age 12-23 months (in thousands),111.0,Demographic
+VII - Central Visayas,2022,PCV 1,87.3,Basic Antigen
+VII - Central Visayas,2022,PCV 2,80.9,Basic Antigen
+VII - Central Visayas,2022,PCV 3,77.6,Basic Antigen
+VII - Central Visayas,2022,Polio 1,91.6,Basic Antigen
+VII - Central Visayas,2022,Polio 2,87.1,Basic Antigen
+VII - Central Visayas,2022,Polio 3,82.7,Basic Antigen
+VII - Central Visayas,2022,Polio-IPV,84.9,Basic Antigen
+VIII - Eastern Visayas,2022,BCG,97.8,Basic Antigen
+VIII - Eastern Visayas,2022,DPT 1,97.1,Basic Antigen
+VIII - Eastern Visayas,2022,DPT 2,96.6,Basic Antigen
+VIII - Eastern Visayas,2022,DPT 3,96.6,Basic Antigen
+VIII - Eastern Visayas,2022,Fully Vaccinated (basic antigens),89.8,Summary Indicator
+VIII - Eastern Visayas,2022,Fully Vaccinated according to national schedule,54.7,Summary Indicator
+VIII - Eastern Visayas,2022,HepB (birth dose),83.9,Basic Antigen
+VIII - Eastern Visayas,2022,HepB 1,96.8,Basic Antigen
+VIII - Eastern Visayas,2022,HepB 2,92.4,Basic Antigen
+VIII - Eastern Visayas,2022,HepB 3,92.4,Basic Antigen
+VIII - Eastern Visayas,2022,Hib 1,97.1,Basic Antigen
+VIII - Eastern Visayas,2022,Hib 2,96.6,Basic Antigen
+VIII - Eastern Visayas,2022,Hib 3,96.6,Basic Antigen
+VIII - Eastern Visayas,2022,Measles/MMR 1,93.4,Basic Antigen
+VIII - Eastern Visayas,2022,No vaccinations,1.2,Summary Indicator
+VIII - Eastern Visayas,2022,Number of Children Age 12-23 months (in thousands),50.0,Demographic
+VIII - Eastern Visayas,2022,PCV 1,89.2,Basic Antigen
+VIII - Eastern Visayas,2022,PCV 2,84.0,Basic Antigen
+VIII - Eastern Visayas,2022,PCV 3,82.6,Basic Antigen
+VIII - Eastern Visayas,2022,Polio 1,96.6,Basic Antigen
+VIII - Eastern Visayas,2022,Polio 2,95.9,Basic Antigen
+VIII - Eastern Visayas,2022,Polio 3,94.1,Basic Antigen
+VIII - Eastern Visayas,2022,Polio-IPV,85.4,Basic Antigen
+X - Northern Mindanao,2022,BCG,90.2,Basic Antigen
+X - Northern Mindanao,2022,DPT 1,86.3,Basic Antigen
+X - Northern Mindanao,2022,DPT 2,86.1,Basic Antigen
+X - Northern Mindanao,2022,DPT 3,82.5,Basic Antigen
+X - Northern Mindanao,2022,Fully Vaccinated (basic antigens),76.8,Summary Indicator
+X - Northern Mindanao,2022,Fully Vaccinated according to national schedule,56.7,Summary Indicator
+X - Northern Mindanao,2022,HepB (birth dose),85.9,Basic Antigen
+X - Northern Mindanao,2022,HepB 1,88.2,Basic Antigen
+X - Northern Mindanao,2022,HepB 2,85.3,Basic Antigen
+X - Northern Mindanao,2022,HepB 3,81.7,Basic Antigen
+X - Northern Mindanao,2022,Hib 1,86.3,Basic Antigen
+X - Northern Mindanao,2022,Hib 2,86.1,Basic Antigen
+X - Northern Mindanao,2022,Hib 3,82.5,Basic Antigen
+X - Northern Mindanao,2022,Measles/MMR 1,83.0,Basic Antigen
+X - Northern Mindanao,2022,No vaccinations,9.8,Summary Indicator
+X - Northern Mindanao,2022,Number of Children Age 12-23 months (in thousands),67.0,Demographic
+X - Northern Mindanao,2022,PCV 1,86.7,Basic Antigen
+X - Northern Mindanao,2022,PCV 2,84.3,Basic Antigen
+X - Northern Mindanao,2022,PCV 3,68.0,Basic Antigen
+X - Northern Mindanao,2022,Polio 1,89.8,Basic Antigen
+X - Northern Mindanao,2022,Polio 2,88.2,Basic Antigen
+X - Northern Mindanao,2022,Polio 3,82.9,Basic Antigen
+X - Northern Mindanao,2022,Polio-IPV,81.5,Basic Antigen
+XI - Davao,2022,BCG,89.0,Basic Antigen
+XI - Davao,2022,DPT 1,89.0,Basic Antigen
+XI - Davao,2022,DPT 2,80.3,Basic Antigen
+XI - Davao,2022,DPT 3,68.7,Basic Antigen
+XI - Davao,2022,Fully Vaccinated (basic antigens),59.6,Summary Indicator
+XI - Davao,2022,Fully Vaccinated according to national schedule,54.1,Summary Indicator
+XI - Davao,2022,HepB (birth dose),77.0,Basic Antigen
+XI - Davao,2022,HepB 1,81.0,Basic Antigen
+XI - Davao,2022,HepB 2,72.3,Basic Antigen
+XI - Davao,2022,HepB 3,68.7,Basic Antigen
+XI - Davao,2022,Hib 1,89.0,Basic Antigen
+XI - Davao,2022,Hib 2,80.3,Basic Antigen
+XI - Davao,2022,Hib 3,68.7,Basic Antigen
+XI - Davao,2022,Measles/MMR 1,61.8,Basic Antigen
+XI - Davao,2022,No vaccinations,11.0,Summary Indicator
+XI - Davao,2022,Number of Children Age 12-23 months (in thousands),77.0,Demographic
+XI - Davao,2022,PCV 1,78.3,Basic Antigen
+XI - Davao,2022,PCV 2,69.7,Basic Antigen
+XI - Davao,2022,PCV 3,61.9,Basic Antigen
+XI - Davao,2022,Polio 1,81.0,Basic Antigen
+XI - Davao,2022,Polio 2,78.3,Basic Antigen
+XI - Davao,2022,Polio 3,68.3,Basic Antigen
+XI - Davao,2022,Polio-IPV,67.4,Basic Antigen
+XII - SOCCSKSARGEN,2022,BCG,81.4,Basic Antigen
+XII - SOCCSKSARGEN,2022,DPT 1,77.1,Basic Antigen
+XII - SOCCSKSARGEN,2022,DPT 2,71.1,Basic Antigen
+XII - SOCCSKSARGEN,2022,DPT 3,66.7,Basic Antigen
+XII - SOCCSKSARGEN,2022,Fully Vaccinated (basic antigens),60.8,Summary Indicator
+XII - SOCCSKSARGEN,2022,Fully Vaccinated according to national schedule,46.8,Summary Indicator
+XII - SOCCSKSARGEN,2022,HepB (birth dose),77.0,Basic Antigen
+XII - SOCCSKSARGEN,2022,HepB 1,77.1,Basic Antigen
+XII - SOCCSKSARGEN,2022,HepB 2,71.9,Basic Antigen
+XII - SOCCSKSARGEN,2022,HepB 3,66.7,Basic Antigen
+XII - SOCCSKSARGEN,2022,Hib 1,77.1,Basic Antigen
+XII - SOCCSKSARGEN,2022,Hib 2,71.1,Basic Antigen
+XII - SOCCSKSARGEN,2022,Hib 3,66.7,Basic Antigen
+XII - SOCCSKSARGEN,2022,Measles/MMR 1,72.9,Basic Antigen
+XII - SOCCSKSARGEN,2022,No vaccinations,18.6,Summary Indicator
+XII - SOCCSKSARGEN,2022,Number of Children Age 12-23 months (in thousands),73.0,Demographic
+XII - SOCCSKSARGEN,2022,PCV 1,69.8,Basic Antigen
+XII - SOCCSKSARGEN,2022,PCV 2,63.3,Basic Antigen
+XII - SOCCSKSARGEN,2022,PCV 3,59.9,Basic Antigen
+XII - SOCCSKSARGEN,2022,Polio 1,76.3,Basic Antigen
+XII - SOCCSKSARGEN,2022,Polio 2,67.9,Basic Antigen
+XII - SOCCSKSARGEN,2022,Polio 3,63.5,Basic Antigen
+XII - SOCCSKSARGEN,2022,Polio-IPV,66.9,Basic Antigen
+XIII - Caraga,2022,BCG,85.1,Basic Antigen
+XIII - Caraga,2022,DPT 1,85.3,Basic Antigen
+XIII - Caraga,2022,DPT 2,83.6,Basic Antigen
+XIII - Caraga,2022,DPT 3,72.8,Basic Antigen
+XIII - Caraga,2022,Fully Vaccinated (basic antigens),64.4,Summary Indicator
+XIII - Caraga,2022,Fully Vaccinated according to national schedule,49.6,Summary Indicator
+XIII - Caraga,2022,HepB (birth dose),79.5,Basic Antigen
+XIII - Caraga,2022,HepB 1,86.4,Basic Antigen
+XIII - Caraga,2022,HepB 2,86.4,Basic Antigen
+XIII - Caraga,2022,HepB 3,74.9,Basic Antigen
+XIII - Caraga,2022,Hib 1,85.3,Basic Antigen
+XIII - Caraga,2022,Hib 2,83.6,Basic Antigen
+XIII - Caraga,2022,Hib 3,72.8,Basic Antigen
+XIII - Caraga,2022,Measles/MMR 1,82.6,Basic Antigen
+XIII - Caraga,2022,No vaccinations,13.0,Summary Indicator
+XIII - Caraga,2022,Number of Children Age 12-23 months (in thousands),39.0,Demographic
+XIII - Caraga,2022,PCV 1,83.7,Basic Antigen
+XIII - Caraga,2022,PCV 2,79.1,Basic Antigen
+XIII - Caraga,2022,PCV 3,64.1,Basic Antigen
+XIII - Caraga,2022,Polio 1,84.0,Basic Antigen
+XIII - Caraga,2022,Polio 2,79.3,Basic Antigen
+XIII - Caraga,2022,Polio 3,70.6,Basic Antigen
+XIII - Caraga,2022,Polio-IPV,79.9,Basic Antigen
+Cordillera Admin. Region,2022,BCG,97.0,Basic Antigen
+Cordillera Admin. Region,2022,DPT 1,98.0,Basic Antigen
+Cordillera Admin. Region,2022,DPT 2,97.0,Basic Antigen
+Cordillera Admin. Region,2022,DPT 3,94.1,Basic Antigen
+Cordillera Admin. Region,2022,Fully Vaccinated (basic antigens),83.9,Summary Indicator
+Cordillera Admin. Region,2022,Fully Vaccinated according to national schedule,65.7,Summary Indicator
+Cordillera Admin. Region,2022,HepB (birth dose),93.5,Basic Antigen
+Cordillera Admin. Region,2022,HepB 1,96.9,Basic Antigen
+Cordillera Admin. Region,2022,HepB 2,90.3,Basic Antigen
+Cordillera Admin. Region,2022,HepB 3,88.4,Basic Antigen
+Cordillera Admin. Region,2022,Hib 1,98.0,Basic Antigen
+Cordillera Admin. Region,2022,Hib 2,97.0,Basic Antigen
+Cordillera Admin. Region,2022,Hib 3,94.1,Basic Antigen
+Cordillera Admin. Region,2022,Measles/MMR 1,92.5,Basic Antigen
+Cordillera Admin. Region,2022,No vaccinations,1.0,Summary Indicator
+Cordillera Admin. Region,2022,Number of Children Age 12-23 months (in thousands),24.0,Demographic
+Cordillera Admin. Region,2022,PCV 1,86.9,Basic Antigen
+Cordillera Admin. Region,2022,PCV 2,84.1,Basic Antigen
+Cordillera Admin. Region,2022,PCV 3,79.9,Basic Antigen
+Cordillera Admin. Region,2022,Polio 1,97.8,Basic Antigen
+Cordillera Admin. Region,2022,Polio 2,90.3,Basic Antigen
+Cordillera Admin. Region,2022,Polio 3,87.8,Basic Antigen
+Cordillera Admin. Region,2022,Polio-IPV,88.7,Basic Antigen
+I - Ilocos Region,2022,BCG,90.8,Basic Antigen
+I - Ilocos Region,2022,DPT 1,90.1,Basic Antigen
+I - Ilocos Region,2022,DPT 2,84.8,Basic Antigen
+I - Ilocos Region,2022,DPT 3,79.2,Basic Antigen
+I - Ilocos Region,2022,Fully Vaccinated (basic antigens),75.5,Summary Indicator
+I - Ilocos Region,2022,Fully Vaccinated according to national schedule,69.7,Summary Indicator
+I - Ilocos Region,2022,HepB (birth dose),89.2,Basic Antigen
+I - Ilocos Region,2022,HepB 1,89.2,Basic Antigen
+I - Ilocos Region,2022,HepB 2,83.9,Basic Antigen
+I - Ilocos Region,2022,HepB 3,77.0,Basic Antigen
+I - Ilocos Region,2022,Hib 1,90.1,Basic Antigen
+I - Ilocos Region,2022,Hib 2,84.8,Basic Antigen
+I - Ilocos Region,2022,Hib 3,79.2,Basic Antigen
+I - Ilocos Region,2022,Measles/MMR 1,84.2,Basic Antigen
+I - Ilocos Region,2022,No vaccinations,8.5,Summary Indicator
+I - Ilocos Region,2022,Number of Children Age 12-23 months (in thousands),65.0,Demographic
+I - Ilocos Region,2022,PCV 1,90.4,Basic Antigen
+I - Ilocos Region,2022,PCV 2,85.0,Basic Antigen
+I - Ilocos Region,2022,PCV 3,82.0,Basic Antigen
+I - Ilocos Region,2022,Polio 1,90.4,Basic Antigen
+I - Ilocos Region,2022,Polio 2,84.7,Basic Antigen
+I - Ilocos Region,2022,Polio 3,83.7,Basic Antigen
+I - Ilocos Region,2022,Polio-IPV,83.2,Basic Antigen
+II - Cagayan Valley,2022,BCG,98.6,Basic Antigen
+II - Cagayan Valley,2022,DPT 1,98.7,Basic Antigen
+II - Cagayan Valley,2022,DPT 2,93.5,Basic Antigen
+II - Cagayan Valley,2022,DPT 3,90.6,Basic Antigen
+II - Cagayan Valley,2022,Fully Vaccinated (basic antigens),90.2,Summary Indicator
+II - Cagayan Valley,2022,Fully Vaccinated according to national schedule,77.7,Summary Indicator
+II - Cagayan Valley,2022,HepB (birth dose),90.9,Basic Antigen
+II - Cagayan Valley,2022,HepB 1,98.7,Basic Antigen
+II - Cagayan Valley,2022,HepB 2,88.5,Basic Antigen
+II - Cagayan Valley,2022,HepB 3,85.6,Basic Antigen
+II - Cagayan Valley,2022,Hib 1,98.7,Basic Antigen
+II - Cagayan Valley,2022,Hib 2,93.5,Basic Antigen
+II - Cagayan Valley,2022,Hib 3,90.6,Basic Antigen
+II - Cagayan Valley,2022,Measles/MMR 1,93.1,Basic Antigen
+II - Cagayan Valley,2022,No vaccinations,1.3,Summary Indicator
+II - Cagayan Valley,2022,Number of Children Age 12-23 months (in thousands),54.0,Demographic
+II - Cagayan Valley,2022,PCV 1,92.4,Basic Antigen
+II - Cagayan Valley,2022,PCV 2,92.3,Basic Antigen
+II - Cagayan Valley,2022,PCV 3,85.4,Basic Antigen
+II - Cagayan Valley,2022,Polio 1,93.6,Basic Antigen
+II - Cagayan Valley,2022,Polio 2,93.6,Basic Antigen
+II - Cagayan Valley,2022,Polio 3,92.2,Basic Antigen
+II - Cagayan Valley,2022,Polio-IPV,92.2,Basic Antigen
+III - Central Luzon,2022,BCG,96.4,Basic Antigen
+III - Central Luzon,2022,DPT 1,96.9,Basic Antigen
+III - Central Luzon,2022,DPT 2,94.7,Basic Antigen
+III - Central Luzon,2022,DPT 3,90.8,Basic Antigen
+III - Central Luzon,2022,Fully Vaccinated (basic antigens),78.4,Summary Indicator
+III - Central Luzon,2022,Fully Vaccinated according to national schedule,66.4,Summary Indicator
+III - Central Luzon,2022,HepB (birth dose),94.8,Basic Antigen
+III - Central Luzon,2022,HepB 1,96.9,Basic Antigen
+III - Central Luzon,2022,HepB 2,94.4,Basic Antigen
+III - Central Luzon,2022,HepB 3,90.6,Basic Antigen
+III - Central Luzon,2022,Hib 1,96.9,Basic Antigen
+III - Central Luzon,2022,Hib 2,94.7,Basic Antigen
+III - Central Luzon,2022,Hib 3,90.8,Basic Antigen
+III - Central Luzon,2022,Measles/MMR 1,85.6,Basic Antigen
+III - Central Luzon,2022,No vaccinations,2.9,Summary Indicator
+III - Central Luzon,2022,Number of Children Age 12-23 months (in thousands),160.0,Demographic
+III - Central Luzon,2022,PCV 1,89.2,Basic Antigen
+III - Central Luzon,2022,PCV 2,84.1,Basic Antigen
+III - Central Luzon,2022,PCV 3,75.4,Basic Antigen
+III - Central Luzon,2022,Polio 1,96.9,Basic Antigen
+III - Central Luzon,2022,Polio 2,92.7,Basic Antigen
+III - Central Luzon,2022,Polio 3,88.4,Basic Antigen
+III - Central Luzon,2022,Polio-IPV,91.1,Basic Antigen
+National Capital Region,2022,BCG,90.8,Basic Antigen
+National Capital Region,2022,DPT 1,88.6,Basic Antigen
+National Capital Region,2022,DPT 2,83.9,Basic Antigen
+National Capital Region,2022,DPT 3,77.8,Basic Antigen
+National Capital Region,2022,Fully Vaccinated (basic antigens),65.7,Summary Indicator
+National Capital Region,2022,Fully Vaccinated according to national schedule,57.0,Summary Indicator
+National Capital Region,2022,HepB (birth dose),86.3,Basic Antigen
+National Capital Region,2022,HepB 1,87.9,Basic Antigen
+National Capital Region,2022,HepB 2,82.0,Basic Antigen
+National Capital Region,2022,HepB 3,75.8,Basic Antigen
+National Capital Region,2022,Hib 1,88.6,Basic Antigen
+National Capital Region,2022,Hib 2,83.9,Basic Antigen
+National Capital Region,2022,Hib 3,77.8,Basic Antigen
+National Capital Region,2022,Measles/MMR 1,177.8,Basic Antigen
+National Capital Region,2022,No vaccinations,7.3,Summary Indicator
+National Capital Region,2022,Number of Children Age 12-23 months (in thousands),153.0,Demographic
+National Capital Region,2022,PCV 1,179.9,Basic Antigen
+National Capital Region,2022,PCV 2,75.9,Basic Antigen
+National Capital Region,2022,PCV 3,66.7,Basic Antigen
+National Capital Region,2022,Polio 1,87.1,Basic Antigen
+National Capital Region,2022,Polio 2,76.5,Basic Antigen
+National Capital Region,2022,Polio 3,70.3,Basic Antigen
+National Capital Region,2022,Polio-IPV,80.5,Basic Antigen
