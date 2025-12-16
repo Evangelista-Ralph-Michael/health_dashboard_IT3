@@ -168,8 +168,9 @@ with f2:
     # Attribution with Link
     st.markdown(
         """
-        **Data Source:** [OpenStat PSA - Vaccination by Sex, Region, Year and Type of Vaccination of Children Age 12-23 months](https://openstat.psa.gov.ph/)  
+        **Data Source:** [OpenStat PSA - Vaccination by Region, Year and Type of Vaccination of Children Age 12-23 months](https://openstat.psa.gov.ph/)  
         *Dashboard created for Health Informatics (ITE3) Finals.*
         """
 
     )
+
