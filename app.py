@@ -1,79 +1,19 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
+import plotly.graph_objects as go  # Added for Lollipop Chart
 
 # -----------------------------------------------------------------------------
 # 1. PAGE CONFIGURATION
 # -----------------------------------------------------------------------------
 st.set_page_config(
     page_title="Health Data Dashboard",
-    page_icon="🏥",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    page_icon="💉",
+    layout="wide"
 )
 
 # -----------------------------------------------------------------------------
-# 2. CSS STYLING (THE FIX)
-# -----------------------------------------------------------------------------
-# This CSS forces the app into a Clean Medical Light Theme, overriding Dark Mode
-st.markdown("""
-    <style>
-        /* 1. Force Main Background to White */
-        .stApp {
-            background-color: #FFFFFF;
-        }
-
-        /* 2. Force Sidebar Background to Light Grey */
-        section[data-testid="stSidebar"] {
-            background-color: #F7F9FB;
-            border-right: 1px solid #E0E0E0;
-        }
-
-        /* 3. Fix Text Colors (Force Dark Text) */
-        h1, h2, h3, h4, h5, h6, p, li, div {
-            color: #212529 !important;
-        }
-        
-        /* 4. Fix Sidebar Input Labels (Make them visible) */
-        .stMultiSelect label, .stSelectbox label {
-            color: #333333 !important;
-            font-weight: 600;
-        }
-        
-        /* 5. Style the KPI Cards */
-        div[data-testid="stMetric"] {
-            background-color: #F0F4F8; /* Soft Blue-Grey */
-            border: 1px solid #D1D9E6;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        
-        div[data-testid="stMetricLabel"] {
-            color: #555555 !important;
-            font-size: 0.9rem;
-        }
-        
-        div[data-testid="stMetricValue"] {
-            color: #2E86AB !important; /* Medical Teal */
-            font-weight: 700;
-        }
-
-        /* 6. Style the Blue Info Banner */
-        .info-box {
-            background-color: #E1F5FE;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 5px solid #0288D1;
-            margin-bottom: 20px;
-            color: #01579B !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-# -----------------------------------------------------------------------------
-# 3. DATA LOADING
+# 2. DATA LOADING & PREPROCESSING
 # -----------------------------------------------------------------------------
 @st.cache_data
 def load_data():
@@ -84,109 +24,101 @@ def load_data():
 try:
     df = load_data()
 except FileNotFoundError:
-    st.error("The file 'vaccination_data.csv' was not found.")
+    st.error("The file 'vaccination_data.csv' was not found. Please ensure it is in the same directory as app.py.")
     st.stop()
 
 # -----------------------------------------------------------------------------
-# 4. SIDEBAR
+# 3. SIDEBAR FILTERS
 # -----------------------------------------------------------------------------
-with st.sidebar:
-    st.image("https://cdn-icons-png.flaticon.com/512/2966/2966327.png", width=50) # Placeholder Medical Icon
-    st.title("Dashboard Controls")
-    
-    # A. Region Filter
-    all_regions = sorted(df['Region'].unique())
-    st.subheader("📍 Geography")
-    selected_regions = st.multiselect(
-        "Select Regions:",
-        options=all_regions,
-        default=all_regions[:3]
-    )
+st.sidebar.header("Filter Options")
 
-    # B. Category Filter
-    st.subheader("📊 Data Type")
-    chart_categories = ["Basic Antigen", "Summary Indicator"]
-    selected_category = st.selectbox(
-        "Select Category:",
-        options=chart_categories,
-        index=0
-    )
-    
-    st.markdown("---")
-    st.caption("Health Informatics Finals")
+# A. Region Filter (Multiselect)
+all_regions = sorted(df['Region'].unique())
+selected_regions = st.sidebar.multiselect(
+    "Select Regions:",
+    options=all_regions,
+    default=all_regions[:3]  # Default to top 3 for cleaner start
+)
+
+# B. Category Filter (Selectbox)
+chart_categories = ["Basic Antigen", "Summary Indicator"]
+selected_category = st.sidebar.selectbox(
+    "Select Category for Charts:",
+    options=chart_categories,
+    index=0
+)
 
 # -----------------------------------------------------------------------------
-# 5. DATA LOGIC
+# 4. DATA FILTERING LOGIC
 # -----------------------------------------------------------------------------
+# Filter by selected regions
 df_filtered = df[df['Region'].isin(selected_regions)]
+
+# Split Data:
+# 1. Demographic Data (For KPIs)
 df_kpi = df_filtered[df_filtered['Category'] == "Demographic"]
+
+# 2. Chart Data (Based on selected category)
 df_charts = df_filtered[df_filtered['Category'] == selected_category]
 
 # -----------------------------------------------------------------------------
-# 6. MAIN DASHBOARD LAYOUT
+# 5. DASHBOARD LAYOUT
 # -----------------------------------------------------------------------------
 
-# Title
-st.title("🇵🇭 Philippine Vaccination Coverage (2022)")
+# Title and Intro
+st.title("Philippine Vaccination Coverage 2022 Dashboard")
+st.markdown("Analysis of immunization coverage for children aged 12-23 months. (2022)")
 
-# Custom HTML Info Banner (Styled by CSS above)
-st.markdown(f"""
-    <div class="info-box">
-        Analysis of immunization coverage for children aged 12-23 months.<br>
-        Currently viewing data for: <b>{selected_category}</b>
-    </div>
-""", unsafe_allow_html=True)
-
-# --- KPIs ---
-st.subheader("📈 Key Performance Indicators")
+# --- SECTION 1: KEY METRICS (KPIs) ---
+st.markdown("### 📊 Key Demographics")
 
 if not df_kpi.empty:
     total_children = df_kpi['Coverage_Rate'].sum()
-    avg_coverage = df_charts['Coverage_Rate'].mean()
     
     kpi1, kpi2, kpi3 = st.columns(3)
     
     with kpi1:
-        st.metric(label="Target Population (Thousands)", value=f"{total_children:,.0f}k")
+        st.metric(
+            label="Total Children Target (in Thousands)",
+            value=f"{total_children:,.0f}k",
+            delta="Target Population"
+        )
+    
     with kpi2:
-        st.metric(label="Avg. Coverage Rate", value=f"{avg_coverage:.2f}%")
-    with kpi3:
-         max_val = df_charts['Coverage_Rate'].max()
-         st.metric(label="Highest Recorded Rate", value=f"{max_val:.2f}%")
+        avg_coverage = df_charts['Coverage_Rate'].mean()
+        st.metric(
+            label=f"Avg. Coverage ({selected_category})",
+            value=f"{avg_coverage:.2f}%"
+        )
 else:
     st.warning("No demographic data available for the selected filters.")
 
 st.markdown("---")
 
-# --- CHARTS ---
-col1, col2 = st.columns([1, 1])
+# --- SECTION 2: COMPARATIVE CHARTS ---
+
+col1, col2 = st.columns(2)
 
 # CHART 1: Bar Chart
 with col1:
-    st.subheader(f"Regional Comparison")
-    df_bar = df_charts.groupby('Region')['Coverage_Rate'].mean().reset_index().sort_values("Coverage_Rate", ascending=False)
+    st.subheader(f"Average Rate by Region")
+    df_bar = df_charts.groupby('Region')['Coverage_Rate'].mean().reset_index()
     
     fig_bar = px.bar(
         df_bar,
         x='Region',
         y='Coverage_Rate',
-        color='Coverage_Rate',
-        color_continuous_scale='Teal',
+        color='Region',
         text_auto='.1f',
+        title=f"Avg. {selected_category} Coverage",
+        labels={'Coverage_Rate': 'Coverage Rate (%)'}
     )
-    fig_bar.update_layout(
-        plot_bgcolor="rgba(0,0,0,0)", # Transparent background
-        paper_bgcolor="rgba(0,0,0,0)", 
-        font=dict(color="black"), # Force text black
-        coloraxis_showscale=False,
-        yaxis=dict(showgrid=True, gridcolor='#eee'),
-        margin=dict(l=0, r=0, t=30, b=0)
-    )
+    fig_bar.update_layout(showlegend=False)
     st.plotly_chart(fig_bar, use_container_width=True)
 
 # CHART 2: Heatmap
 with col2:
-    st.subheader("Coverage Intensity Matrix")
+    st.subheader("Coverage Intensity Heatmap")
     
     heatmap_data = df_charts.pivot_table(
         index='Region', 
@@ -196,79 +128,92 @@ with col2:
     
     fig_heatmap = px.imshow(
         heatmap_data,
-        labels=dict(x="Vaccine", y="Region", color="Rate (%)"),
+        labels=dict(x="Vaccine Type", y="Region", color="Rate (%)"),
         x=heatmap_data.columns,
         y=heatmap_data.index,
-        color_continuous_scale="Blues",
+        color_continuous_scale="Viridis",
         aspect="auto"
     )
-    fig_heatmap.update_layout(
-        plot_bgcolor="rgba(0,0,0,0)",
-        paper_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="black"), # Force text black
-        margin=dict(l=0, r=0, t=30, b=0)
-    )
+    fig_heatmap.update_layout(title="Region vs. Vaccine Intensity")
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
 st.markdown("---")
 
-# --- LOLLIPOP CHARTS ---
-st.subheader("🔍 Detailed Regional Breakdown")
+# --- SECTION 3: REGIONAL LOLLIPOP CHARTS (NEW) ---
+st.markdown("### Detailed Regional Breakdown")
+st.caption("Detailed performance of each vaccine type for the selected regions.")
 
 if not selected_regions:
-    st.info("👈 Please select at least one region in the sidebar.")
+    st.info("Please select at least one region in the sidebar to see the detailed breakdown.")
 else:
+    # Loop through each selected region to create a separate chart
     for region_name in selected_regions:
-        with st.container():
-            region_data = df_charts[df_charts['Region'] == region_name].copy()
-            region_data = region_data.sort_values(by="Coverage_Rate", ascending=True)
+        # Filter data for this specific region
+        region_data = df_charts[df_charts['Region'] == region_name].copy()
+        
+        # Sort data by Coverage Rate so the chart looks organized (ascending)
+        region_data = region_data.sort_values(by="Coverage_Rate", ascending=True)
 
-            fig_pop = go.Figure()
+        # Create the Lollipop Chart using Graph Objects
+        fig_pop = go.Figure()
 
-            # Sticks (Grey)
-            for i, row in region_data.iterrows():
-                fig_pop.add_shape(
-                    type="line",
-                    x0=0, y0=row['Vaccine'],
-                    x1=row['Coverage_Rate'], y1=row['Vaccine'],
-                    line=dict(color="#B0BEC5", width=2)
-                )
-
-            # Dots (Teal)
-            fig_pop.add_trace(go.Scatter(
-                x=region_data['Coverage_Rate'],
-                y=region_data['Vaccine'],
-                mode='markers+text',
-                marker=dict(color='#0288D1', size=14, line=dict(width=2, color='white')),
-                text=region_data['Coverage_Rate'].astype(str) + '%',
-                textposition="middle right",
-                name=region_name,
-                hoverinfo='x+y'
-            ))
-
-            fig_pop.update_layout(
-                title=dict(text=f"<b>{region_name}</b> Performance", font=dict(size=18, color='#333')),
-                xaxis_title="Coverage Rate (%)",
-                xaxis=dict(showgrid=True, gridcolor='#f0f0f0', range=[0, 115]),
-                yaxis_title="",
-                showlegend=False,
-                height=350,
-                plot_bgcolor="white",
-                paper_bgcolor="white",
-                font=dict(color="black"),
-                margin=dict(l=20, r=20, t=40, b=20)
+        # 1. Draw the lines (the stick)
+        # We iterate through the rows to draw a line from 0 to the value
+        for i, row in region_data.iterrows():
+            fig_pop.add_shape(
+                type="line",
+                x0=0, y0=row['Vaccine'],
+                x1=row['Coverage_Rate'], y1=row['Vaccine'],
+                line=dict(color="gray", width=1)
             )
-            
-            st.plotly_chart(fig_pop, use_container_width=True)
+
+        # 2. Draw the dots (the candy)
+        fig_pop.add_trace(go.Scatter(
+            x=region_data['Coverage_Rate'],
+            y=region_data['Vaccine'],
+            mode='markers+text',
+            marker=dict(color="#F7B0EC", size=12), # Streamlit Red color
+            text=region_data['Coverage_Rate'].astype(str) + '%',
+            textposition="middle right",
+            name=region_name,
+            hoverinfo='x+y'
+        ))
+
+        # Layout adjustments
+        fig_pop.update_layout(
+            title=f"<b>{region_name}</b>: {selected_category} Coverage",
+            xaxis_title="Coverage Rate (%)",
+            yaxis_title="", # Hide y-axis title as it's self-explanatory
+            showlegend=False,
+            height=500, # Fixed height for consistency
+            xaxis=dict(range=[0, max(100, region_data['Coverage_Rate'].max() + 10)]) # Ensure X axis fits 0-100+
+        )
+        
+        st.plotly_chart(fig_pop, use_container_width=True)
+
 
 # -----------------------------------------------------------------------------
-# 7. DOWNLOADS
+# 6. FOOTER, DOWNLOADS & ATTRIBUTION
 # -----------------------------------------------------------------------------
 st.markdown("---")
+
+# Convert dataframe to CSV for download
 csv_data = df.to_csv(index=False).encode('utf-8')
-st.download_button(
-    label="📥 Download Data CSV",
-    data=csv_data,
-    file_name="vaccination_data.csv",
-    mime="text/csv",
-)
+
+f1, f2 = st.columns([1, 4])
+
+with f1:
+    st.download_button(
+        label="📥 Download Data",
+        data=csv_data,
+        file_name="vaccination_data.csv",
+        mime="text/csv",
+    )
+
+with f2:
+    st.markdown(
+        """
+        **Data Source:** [OpenStat PSA - Vaccination by Region, Year and Type of Vaccination of Children Age 12-23 months](https://openstat.psa.gov.ph/)  
+        *Dashboard created for Health Informatics (ITE3) Finals.*
+        """
+    )
